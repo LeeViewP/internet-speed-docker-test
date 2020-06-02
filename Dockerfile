@@ -7,6 +7,6 @@ RUN curl https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.
 RUN chmod +x /app/speedtest/speedtest-cli
 
 ADD scripts/ /app/speedtest/
-RUN chmod +x /app/speedtest/
+RUN chmod +x /app/speedtest/init_test_connection.sh
 CMD sh -c /app/speedtest/init_test_connection.sh
 
